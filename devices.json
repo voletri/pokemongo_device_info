@@ -36,23 +36,25 @@
             {
             "report" : "gps" ,
             "has_valid" : true,
+            "invalid_altitude" : true,
             "invalid_latitude" : 360,
             "invalid_longitude" : 360,
             "invalid_provider_status" : 3,
+            "valid_altitude" :true,
             "valid_provider_status": 3,
             "invalid_horizontal_accuracy" : 52,
-            "valid_horizontal_accuracy" : [5, 67]
+            "valid_horizontal_accuracy" : [5, 67],
+            "rounded" : ["horizontal_accuracy","altitude"]
             },
             "network" :
             {
             "report" : "network",
             "has_valid" : false,
+            "invalid_altitude" : false,
             "invalid_latitude" : 360,
             "invalid_longitude" : 360,
-            "invalid_provider_status" : 3,
-            "valid_provider_status": 3,
+            "invalid_provider_status" : 3,            
             "invalid_horizontal_accuracy" : 25,
-            "valid_horizontal_accuracy" : 25
             }
         }
     }
