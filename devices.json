@@ -19,18 +19,20 @@
         },
         "is_android" : true,
         "is_ios" : false,
-        "has_activity_status" : false,
-        "has_sensor_info" : false,
+        
         "has_android_gps_info" : true,
-        "gps_snr_range" : [0, 46],
-        "gps_has_glonass" : true,
-        "gps_has_gps" : true,
-        "acc_axes_availability" : [0, 0, 0 ],
-        "gyro_axes_availability" : [0, 0, 0],
-        "magn_axes_availability" : [0, 0, 0],
-        "reported_acc_axes" : 0,
-        "has_location_fix" : true,
-        "location_fix" :
+        "android_gps_info" : 
+        {
+            "gps_snr_range" : [0, 46],
+            "gps_has_glonass" : true,
+            "gps_has_gps" : true
+        },
+        "has_sensor_update" : false,
+        "sensor_update" :
+        {
+        },
+        "has_location_update" : true,
+        "location_update" :
         {
             "gps" :
             {
@@ -54,8 +56,10 @@
             "invalid_latitude" : 360,
             "invalid_longitude" : 360,
             "invalid_provider_status" : 3,            
-            "invalid_horizontal_accuracy" : 25,
+            "invalid_horizontal_accuracy" : 25
             }
-        }
+        },
+        "has_ios_device_info" : false,
+        "ios_device_info": {  } 
     }
 }
